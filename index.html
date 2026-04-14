@@ -318,6 +318,50 @@
     </div>
 </div>
 
+<!-- MODAL PLANES -->
+<div class="modal-overlay" id="modalPlanes">
+    <div class="modal-box">
+        <button class="modal-close-btn" onclick="closeModal('modalPlanes')">✕</button>
+        <div class="modal-header">
+            <h3>Elige tu plan</h3>
+        </div>
+        <div class="modal-body">
+            <div class="planes-modal-grid">
+                <div class="plan-card">
+                    <div class="plan-price-wrap">
+                        <div class="plan-name">Gratuito</div>
+                        <div class="price" style="font-size:2.2rem">$0 <span>/ siempre</span></div>
+                    </div>
+                    <div class="plan-divider"></div>
+                    <div class="plan-role-title">Emprendedor</div>
+                    <div class="plan-feat"><div class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>2 proyectos activos</div>
+                    <div class="plan-feat"><div class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Publicar evidencias</div>
+                    <div class="plan-role-title">Colaborador</div>
+                    <div class="plan-feat"><div class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Perfil básico</div>
+                    <div class="plan-feat"><div class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>1 aplicación por mes</div>
+                    <button class="plan-cta-btn" onclick="seleccionarPlan('gratuito');closeModal('modalPlanes')">Seleccionar</button>
+                </div>
+                <div class="plan-card featured">
+                    <div class="plan-featured-badge">✦ Recomendado</div>
+                    <div class="plan-price-wrap">
+                        <div class="plan-name">Premium</div>
+                        <div class="price" style="font-size:2.2rem">$5 <span>/ mes</span></div>
+                    </div>
+                    <div class="plan-divider"></div>
+                    <div class="plan-role-title">Emprendedor</div>
+                    <div class="plan-feat"><div class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Proyectos ilimitados</div>
+                    <div class="plan-feat"><div class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Métricas + panel IoT</div>
+                    <div class="plan-feat"><div class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Soporte prioritario</div>
+                    <div class="plan-role-title">Colaborador</div>
+                    <div class="plan-feat"><div class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Aplicaciones ilimitadas</div>
+                    <div class="plan-feat"><div class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Ranking destacado</div>
+                    <button class="plan-cta-btn" onclick="seleccionarPlan('premium');closeModal('modalPlanes')">Suscribirme</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 </body>
 </html>
