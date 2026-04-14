@@ -1,0 +1,26 @@
+:root {
+    --ink:       #1A1733;
+    --ink-mid:   #3D3870;
+    --ink-soft:  #91908C;
+    --surface:   #FAFAFA;
+    --white:     #FFFFFF;
+    --accent:    #5147B7;
+    --accent-dk: #3D3489;
+    --accent-lt: #ECEAFD;
+    --fire:      #EE9D32;
+    --fire-lt:   #FDF3E3;
+    --mint:      #8176DC;
+    --border:    rgba(81,71,183,0.10);
+
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 36px;
+
+    --shadow-sm: 0 2px 10px rgba(81,71,183,0.06);
+    --shadow-md: 0 8px 30px rgba(81,71,183,0.10);
+    --shadow-lg: 0 20px 60px rgba(81,71,183,0.14);
+
+    --font-head: 'Playfair Display', 'Times New Roman', Georgia, serif;
+    --font-body: 'Lora', 'Times New Roman', Georgia, serif;
+}
