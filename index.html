@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Foundly — Plataforma de crowdfunding colaborativo para emprendedores peruanos. Crea tu campaña, forma equipos y recauda fondos.">
+    <title>Foundly — Crowdfunding Colaborativo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!-- ===== HEADER ===== -->
+<header>
+    <a href="#Inicio" class="logo-wrap">
+        <img src="assets/images/logo/Logo.jpeg" alt="Foundly" style="height:48px;">
+    </a>
+
+    <nav>
+        <a href="#Inicio">Inicio</a>
+        <a href="#Servicios">Servicios</a>
+        <a href="#Nosotros">Nosotros</a>
+        <a href="#IoT">IoT en Vivo</a>
+        <a href="#Contacto">Contacto</a>
+    </nav>
+
+
+    <div class="header-cta">
+        <a href="" class="btn-ghost">Iniciar sesión</a>
+        <a href="" class="btn-primary">
+            <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:none;stroke:#fff;stroke-width:2.5"><path d="M12 5v14M5 12h14"/></svg>
+            Crear cuenta
+        </a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+    </button>
+
+</header>
+
+<!-- ===== NOSOTROS ===== -->
+<section id="Nosotros">
+    <div class="nosotros-img-side">
+        <div class="nosotros-img-wrap">
+            <img src="assets/images/projects/Nosotros.avif" alt="Equipo Foundly">
+            <div class="nosotros-badge">
+                <div class="nb-icon">
+                    <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </div>
+                <div class="nb-text">
+                    <div class="t">Fundado en Lima, Perú</div>
+                    <div class="s">Por estudiantes de UPC</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nosotros-text-side">
+        <div class="section-tag">Nosotros</div>
+        <h2 class="section-h">Somos Foundly Labs</h2>
+        <p>Nacimos con la misión de transformar cómo los emprendedores peruanos lanzan sus ideas. Creemos que toda buena idea merece la oportunidad de hacerse realidad, y que la colaboración es el camino más poderoso para lograrlo.</p>
+        <p>Nuestra plataforma conecta a quienes tienen visión con quienes tienen talento, y a ambos con quienes quieren invertir en el futuro del emprendimiento en Perú.</p>
+        <div class="team-avatars">
+            <div class="av"><img class="pc-img-bg" src="assets/images/team/pierina.jpg" alt="Pierina Marysabel"></div>
+            <div class="av"><img class="pc-img-bg" src="assets/images/team/Vitaly.jpeg" alt="Vitaly Arturo"></div>
+            <div class="av"><img class="pc-img-bg" src="assets/images/team/Diego_Bautista.jpeg" alt="Jose Diego Bautista"></div>
+            <div class="av"><img class="pc-img-bg" src="assets/images/team/Mauricio.png" alt="Mauricio Alejandro"></div>
+            <div class="av"><img class="pc-img-bg" src="assets/images/team/Sebastian.jpg" alt="Sebastian Pariachi"></div></div>
+        <div class="team-avatars-label"><strong>5 fundadores</strong><br>Foundly · UPC</div>
+    </div>
+    <button class="team-btn" onclick="openModal('modalEquipo')">
+        Conoce al equipo
+        <svg style="width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </button>
+    </div>
+</section>
+
+<!-- ===== APP ===== -->
+<section id="App">
+    <div class="app-inner">
+        <div class="section-tag" style="justify-content:center">¿Para quién es Foundly?</div>
+        <h2 class="section-h">Elige tu rol en<br>la comunidad</h2>
+        <p class="section-sub" style="margin:0 auto">Foundly está diseñado para dos perfiles. Encuentra el tuyo y descubre cómo la plataforma se adapta a lo que necesitas.</p>
+        <div class="roles-grid">
+            <a href="pages/entrepreneur.html" class="role-tile emprendedor">
+                <div class="role-tile-left">
+                    <h3>Emprendedor</h3>
+                    <p>Crea campañas, gestiona equipos y atrae financiadores</p>
+                </div>
+                <div class="role-arrow">→</div>
+            </a>
+            <a href="pages/collaborator.html" class="role-tile colaborador">
+                <div class="role-tile-left">
+                    <h3>Colaborador</h3>
+                    <p>Encuentra proyectos, aplica y construye tu reputación</p>
+                </div>
+                <div class="role-arrow">→</div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== IOT ===== -->
+<section id="IoT">
+    <div class="iot-inner">
+        <div class="iot-text-side">
+            <div class="section-tag iot-section-tag">Nuevo feature</div>
+            <h2 class="section-h iot-h">Proyectos IoT<br>en tiempo real</h2>
+            <p class="section-sub iot-sub">Los proyectos de hardware pueden conectar su prototipo a Foundly y transmitir datos de sensores en vivo. Genera confianza en financiadores y atrae colaboradores técnicos.</p>
+            <div class="iot-features">
+                <div class="iot-feat">
+                    <div class="iot-feat-icon">
+                        <svg viewBox="0 0 24 24"><path d="M1 6s0-4 7-4 7 4 7 4v14s0-4-7-4-7 4-7 4V6zM15 6s0-4 7-4 7 4 7 4v14s0-4-7-4-7 4-7 4V6z"/></svg>
+                    </div>
+                    <div class="iot-feat-text">
+                        <div class="t">Conecta tu dispositivo real</div>
+                        <div class="s">Vía MQTT a HiveMQ broker. Publica lecturas cada 5 segundos automáticamente.</div>
+                    </div>
+                </div>
+                <div class="iot-feat">
+                    <div class="iot-feat-icon">
+                        <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    </div>
+                    <div class="iot-feat-text">
+                        <div class="t">Modo demo integrado</div>
+                        <div class="s">Sin dispositivo físico. Activa el simulador del backend y muestra datos de ejemplo al instante.</div>
+                    </div>
+                </div>
+                <div class="iot-feat">
+                    <div class="iot-feat-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+                    </div>
+                    <div class="iot-feat-text">
+                        <div class="t">4 categorías de sensores</div>
+                        <div class="s">Calidad del aire, agua/riego, energía solar y salud/bienestar. Métricas en tiempo real para cada categoría.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="iot-visual-side">
+            <div class="iot-panel">
+                <div class="iot-panel-header">
+                    <div class="iot-panel-title">Panel IoT — AgroSensor Pro</div>
+                    <div class="iot-live-badge"><div class="iot-live-dot"></div>LIVE</div>
+                </div>
+                <div class="iot-sensor-grid">
+                    <div class="iot-sensor">
+                        <div class="iot-s-label">CO₂</div>
+                        <div class="iot-s-val">412 <span>ppm</span></div>
+                        <div class="iot-s-trend">↑ +2.1 último ciclo</div>
+                    </div>
+                    <div class="iot-sensor">
+                        <div class="iot-s-label">PM2.5</div>
+                        <div class="iot-s-val">18 <span>µg/m³</span></div>
+                        <div class="iot-s-trend">↓ −0.8 óptimo</div>
+                    </div>
+                    <div class="iot-sensor">
+                        <div class="iot-s-label">Temperatura</div>
+                        <div class="iot-s-val">22 <span>°C</span></div>
+                        <div class="iot-s-trend">→ estable</div>
+                    </div>
+                    <div class="iot-sensor">
+                        <div class="iot-s-label">Humedad</div>
+                        <div class="iot-s-val">68 <span>%</span></div>
+                        <div class="iot-s-trend">↑ +1.2%</div>
+                    </div>
+                </div>
+                <div class="iot-chart-bar">
+                    <div class="iot-bar-row">
+                        <div class="iot-bar-label">10:00</div>
+                        <div class="iot-bar-track"><div class="iot-bar-fill" style="width:58%"></div></div>
+                        <div class="iot-bar-val">58%</div>
+                    </div>
+                    <div class="iot-bar-row">
+                        <div class="iot-bar-label">10:05</div>
+                        <div class="iot-bar-track"><div class="iot-bar-fill" style="width:63%"></div></div>
+                        <div class="iot-bar-val">63%</div>
+                    </div>
+                    <div class="iot-bar-row">
+                        <div class="iot-bar-label">10:10</div>
+                        <div class="iot-bar-track"><div class="iot-bar-fill" style="width:68%"></div></div>
+                        <div class="iot-bar-val">68%</div>
+                    </div>
+                    <div class="iot-bar-row">
+                        <div class="iot-bar-label">10:15</div>
+                        <div class="iot-bar-track"><div class="iot-bar-fill" style="width:71%"></div></div>
+                        <div class="iot-bar-val">71%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PROYECTOS ===== -->
+<section id="Proyectos">
+    <div class="proyectos-inner">
+        <div class="proyectos-header">
+            <div>
+                <div class="section-tag">Proyectos en vivo</div>
+                <h2 class="section-h">Emprendimientos que<br>marcan la diferencia</h2>
+            </div>
+            <a href="#" class="hero-btn-secondary" style="align-self:flex-end">Ver todos los proyectos</a>
+        </div>
+        <div class="carousel-wrap">
+            <div class="carousel-track-outer">
+                <div class="proyecto-cards" id="proyectoTrack">
+                    <div class="proyecto-card">
+                        <div class="pc-img">
+                            <img class="pc-img-bg" src="assets/images/projects/emprendimento1.png" alt="Green Haven">
+                            <div class="pc-cat">Agro / Sostenibilidad</div>
+                        </div>
+                        <div class="pc-body">
+                            <h4>Green Haven</h4>
+                            <p>Transformamos espacios urbanos en oasis ecológicos con tecnología de monitoreo inteligente.</p>
+                            <div class="pc-progress">
+                                <div class="pc-progress-bar"><div class="pc-progress-fill" style="width:78%"></div></div>
+                                <div class="pc-progress-labels"><span class="pct">78% financiado</span><span class="goal">Meta: S/.15,000</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proyecto-card">
+                        <div class="pc-img">
+                            <img class="pc-img-bg" src="assets/images/projects/emprendimento2.png" alt="Serenity Flow">
+                            <div class="pc-cat">Salud / Bienestar</div>
+                        </div>
+                        <div class="pc-body">
+                            <h4>Serenity Flow</h4>
+                            <p>Espacio holístico donde la meditación y la tecnología se fusionan para el bienestar moderno.</p>
+                            <div class="pc-progress">
+                                <div class="pc-progress-bar"><div class="pc-progress-fill" style="width:45%"></div></div>
+                                <div class="pc-progress-labels"><span class="pct">45% financiado</span><span class="goal">Meta: S/.8,000</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proyecto-card">
+                        <div class="pc-img">
+                            <img class="pc-img-bg" src="assets/images/projects/emprendimento3.png" alt="Brew Bliss">
+                            <div class="pc-cat">Gastronomía</div>
+                        </div>
+                        <div class="pc-body">
+                            <h4>Brew Bliss</h4>
+                            <p>Experiencia sensorial que transforma el ritual del café en un viaje de placer consciente.</p>
+                            <div class="pc-progress">
+                                <div class="pc-progress-bar"><div class="pc-progress-fill" style="width:91%"></div></div>
+                                <div class="pc-progress-labels"><span class="pct">91% financiado</span><span class="goal">Meta: S/.12,000</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proyecto-card">
+                        <div class="pc-img">
+                            <img class="pc-img-bg" src="assets/images/projects/emprendimento4.png" alt="Sharp Cuts">
+                            <div class="pc-cat">Servicios</div>
+                        </div>
+                        <div class="pc-body">
+                            <h4>Sharp Cuts</h4>
+                            <p>Redefine la barbería moderna con las últimas tendencias en cuidado masculino y tecnología.</p>
+                            <div class="pc-progress">
+                                <div class="pc-progress-bar"><div class="pc-progress-fill" style="width:60%"></div></div>
+                                <div class="pc-progress-labels"><span class="pct">60% financiado</span><span class="goal">Meta: S/.6,500</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proyecto-card">
+                        <div class="pc-img">
+                            <img class="pc-img-bg" src="assets/images/projects/emprendimento5.png" alt="Polish Perfect">
+                            <div class="pc-cat">Belleza</div>
+                        </div>
+                        <div class="pc-body">
+                            <h4>Polish Perfect</h4>
+                            <p>Santuario de belleza especializado en el arte del cuidado y embellecimiento de uñas premium.</p>
+                            <div class="pc-progress">
+                                <div class="pc-progress-bar"><div class="pc-progress-fill" style="width:33%"></div></div>
+                                <div class="pc-progress-labels"><span class="pct">33% financiado</span><span class="goal">Meta: S/.9,000</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proyecto-card">
+                        <div class="pc-img">
+                            <img class="pc-img-bg" src="assets/images/projects/emprendimento6.png" alt="Blossom Bloom">
+                            <div class="pc-cat">Arte / Diseño</div>
+                        </div>
+                        <div class="pc-body">
+                            <h4>Blossom Bloom</h4>
+                            <p>Floristería artesanal que transforma la belleza efímera de las flores en momentos eternos.</p>
+                            <div class="pc-progress">
+                                <div class="pc-progress-bar"><div class="pc-progress-fill" style="width:55%"></div></div>
+                                <div class="pc-progress-labels"><span class="pct">55% financiado</span><span class="goal">Meta: S/.7,000</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button class="car-btn" id="carPrev" aria-label="Anterior">
+                    <svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <button class="car-btn" id="carNext" aria-label="Siguiente">
+                    <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MODAL IDEA -->
+<div class="modal-overlay" id="modalIdea">
+    <div class="modal-box" style="max-width:500px">
+        <button class="modal-close-btn" onclick="closeModal('modalIdea')">✕</button>
+        <div class="modal-header">
+            <h3>Conecta tus Ideas</h3>
+            <p>Haz visible tu proyecto al mundo</p>
+        </div>
+        <div class="modal-body">
+            <p style="color:var(--ink-mid);line-height:1.8;font-family:var(--font-body)">Presenta tu proyecto en Foundly y encuentra colaboradores interesados en sumarse a tu iniciativa. Define objetivos, sube evidencias y gestiona hitos desde un solo lugar. Tu idea merece ser escuchada.</p>
+                <a href="" class="hero-btn-primary" style="margin-top:24px;display:inline-flex">Crear mi proyecto →</a>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL PLANES -->
+<div class="modal-overlay" id="modalPlanes">
+    <div class="modal-box">
+        <button class="modal-close-btn" onclick="closeModal('modalPlanes')">✕</button>
+        <div class="modal-header">
+            <h3>Elige tu plan</h3>
+        </div>
+        <div class="modal-body">
+            <div class="planes-modal-grid">
+                <div class="plan-card">
+                    <div class="plan-price-wrap">
+                        <div class="plan-name">Gratuito</div>
+                        <div class="price" style="font-size:2.2rem">$0 <span>/ siempre</span></div>
+                    </div>
+                    <div class="plan-divider"></div>
+                    <div class="plan-role-title">Emprendedor</div>
+                    <div class="plan-feat"><div class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>2 proyectos activos</div>
+                    <div class="plan-feat"><div class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Publicar evidencias</div>
+                    <div class="plan-role-title">Colaborador</div>
+                    <div class="plan-feat"><div class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Perfil básico</div>
+                    <div class="plan-feat"><div class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>1 aplicación por mes</div>
+                    <button class="plan-cta-btn" onclick="seleccionarPlan('gratuito');closeModal('modalPlanes')">Seleccionar</button>
+                </div>
+                <div class="plan-card featured">
+                    <div class="plan-featured-badge">✦ Recomendado</div>
+                    <div class="plan-price-wrap">
+                        <div class="plan-name">Premium</div>
+                        <div class="price" style="font-size:2.2rem">$5 <span>/ mes</span></div>
+                    </div>
+                    <div class="plan-divider"></div>
+                    <div class="plan-role-title">Emprendedor</div>
+                    <div class="plan-feat"><div class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Proyectos ilimitados</div>
+                    <div class="plan-feat"><div class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Métricas + panel IoT</div>
+                    <div class="plan-feat"><div class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Soporte prioritario</div>
+                    <div class="plan-role-title">Colaborador</div>
+                    <div class="plan-feat"><div class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Aplicaciones ilimitadas</div>
+                    <div class="plan-feat"><div class="check"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Ranking destacado</div>
+                    <button class="plan-cta-btn" onclick="seleccionarPlan('premium');closeModal('modalPlanes')">Suscribirme</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
