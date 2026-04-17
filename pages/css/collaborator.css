@@ -32,3 +32,41 @@ a { text-decoration: none; color: inherit; }
 
 
 .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+
+/* ===== TOPBAR ===== */
+.topbar {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+
+.topbar .bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top-actions { margin-left: auto; display: flex; gap: 10px; }
+
+
+.btn-outline-sm {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 2px solid var(--brand);
+  color: var(--brand);
+  background: transparent;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+
+
+.btn-outline-sm:hover { background: var(--brand); color: #fff; }
