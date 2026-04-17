@@ -579,6 +579,35 @@
         </div>
     </div>
 </footer>
+<!-- ===== ASISTENTE CHAT ===== -->
+<button class="chat-fab" id="chatFab" aria-label="Abrir asistente">
+    <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+</button>
+
+<div class="chat-popup" id="chatPopup">
+    <div class="chat-header">
+        <div class="chat-header-left">
+            <div class="chat-avatar">
+                <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zm0 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm0 14.2a7.2 7.2 0 0 1-6-3.22c.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08a7.2 7.2 0 0 1-6 3.22z"/></svg>
+            </div>
+            <div class="chat-header-text">
+                <div class="ct">Asistente Foundly</div>
+                <div class="cs"><div class="chat-online-dot"></div>En línea</div>
+            </div>
+        </div>
+        <button class="chat-close" id="chatClose">✕</button>
+    </div>
+    <div class="chat-body">
+        <div class="chat-welcome">👋 ¡Hola! ¿En qué puedo ayudarte hoy?</div>
+        <div class="chat-options">
+            <button class="chat-opt" onclick="chatResponder('registro')">¿Cómo me registro?</button>
+            <button class="chat-opt" onclick="chatResponder('colaborar')">¿Cómo colaborar en un proyecto?</button>
+            <button class="chat-opt" onclick="chatResponder('iot')">¿Qué es el panel IoT?</button>
+            <button class="chat-opt" onclick="chatResponder('planes')">¿Qué plan me conviene?</button>
+        </div>
+        <div class="chat-response" id="chatResponse"></div>
+    </div>
+</div>
 <!-- MODAL IDEA -->
 <div class="modal-overlay" id="modalIdea">
     <div class="modal-box" style="max-width:500px">
