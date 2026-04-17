@@ -14,3 +14,21 @@
   --font-head:  'Playfair Display', Georgia, serif;
   --font-body:  'Lora', Georgia, serif;
 }
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+
+h1, h2, h3 { font-family: var(--font-head); }
+
+
+a { text-decoration: none; color: inherit; }
+
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
