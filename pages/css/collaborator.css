@@ -323,3 +323,17 @@ a { text-decoration: none; color: inherit; }
   background: var(--surface);
   font-size: 0.88rem;
 }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .hero .wrap { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: 1fr 1fr; }
+  .steps { grid-template-columns: repeat(2, 1fr); }
+  .band { grid-template-columns: 1fr; }
+  .iot-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .grid-3 { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: 1fr; }
+  .iot-grid { grid-template-columns: 1fr; }
+}
