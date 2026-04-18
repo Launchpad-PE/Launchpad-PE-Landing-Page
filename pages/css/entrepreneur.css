@@ -139,3 +139,17 @@ a { text-decoration: none; color: inherit; }
   white-space: nowrap;
   font-family: monospace;
 }
+
+/* ===== SECCIONES ===== */
+.section { padding: 72px 24px; }
+.section h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: var(--brand);
+  margin-bottom: 10px;
+}
+.section-sub {
+  color: var(--muted);
+  margin-bottom: 40px;
+  font-size: 1rem;
+  max-width: 560px;
+}
