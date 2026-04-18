@@ -250,3 +250,35 @@ a { text-decoration: none; color: inherit; }
 .iot-card h3 { font-size: 0.95rem; color: #fff; margin-bottom: 6px; font-family: var(--font-head); }
 .iot-card p { font-size: 0.85rem; color: rgba(255,255,255,0.55); line-height: 1.6; }
 .iot-us { font-size: 0.72rem; font-family: monospace; color: #8176DC; margin-top: 8px; display: block; }
+
+/* ===== ACCORDION ===== */
+.faq-section { background: var(--bg); }
+.accordion { display: grid; gap: 10px; }
+.acc-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.acc-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  font-family: var(--font-head);
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--brand);
+  font-size: 0.95rem;
+}
+.acc-head::after { content: '+'; font-size: 1.3rem; transition: transform 0.2s; }
+.acc-item.active .acc-head::after { transform: rotate(45deg); }
+.acc-body {
+  padding: 0 20px 16px;
+  display: none;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+.acc-item.active .acc-body { display: block; }
