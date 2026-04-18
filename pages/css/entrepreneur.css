@@ -1,0 +1,16 @@
+:root {
+  --brand:      #5147B7;
+  --brand-600:  #3D3489;
+  --accent:     #EE9D32;
+  --accent-600: #d4871a;
+  --success:    #8176DC;
+  --bg:         #FAFAFA;
+  --surface:    #FFFFFF;
+  --text:       #1A1733;
+  --muted:      #91908C;
+  --border:     rgba(81,71,183,0.10);
+  --ring:       rgba(81,71,183,0.35);
+  --shadow:     0 8px 30px rgba(81,71,183,0.10);
+  --font-head:  'Playfair Display', Georgia, serif;
+  --font-body:  'Lora', Georgia, serif;
+}
