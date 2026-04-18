@@ -153,3 +153,27 @@ a { text-decoration: none; color: inherit; }
   font-size: 1rem;
   max-width: 560px;
 }
+
+/* ===== BENEFICIOS ===== */
+#beneficios { background: var(--surface); }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 24px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(81,71,183,0.12); }
+.card h3 { font-size: 1rem; margin-bottom: 8px; color: var(--text); }
+.card p { color: var(--muted); font-size: 0.9rem; line-height: 1.65; }
+.card .icon {
+  width: 46px; height: 46px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: rgba(81,71,183,0.10);
+  font-size: 22px;
+  margin-bottom: 14px;
+}
