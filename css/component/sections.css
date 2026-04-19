@@ -263,3 +263,61 @@ section { padding: 100px 5%; }
 .iot-bar-track { flex: 1; height: 6px; background: rgba(255,255,255,0.08); border-radius: 99px; overflow: hidden; }
 .iot-bar-fill { height: 100%; background: var(--mint); border-radius: 99px; transition: width 0.8s ease; }
 .iot-bar-val { font-size: 0.72rem; color: rgba(255,255,255,0.55); width: 36px; flex-shrink: 0; font-family: var(--font-body); }
+
+/* ===== PROYECTOS ===== */
+#Proyectos { background: var(--surface); }
+.proyectos-inner { max-width: 1200px; margin: 0 auto; }
+.proyectos-header { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 48px; flex-wrap: wrap; gap: 20px; }
+
+.carousel-wrap { position: relative; overflow: hidden; }
+.carousel-track-outer { overflow: hidden; }
+.proyecto-cards { display: flex; gap: 24px; transition: transform 0.5s cubic-bezier(.25,.46,.45,.94); }
+
+.proyecto-card {
+  flex: 0 0 calc(33.333% - 16px);
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.proyecto-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.pc-img { height: 180px; overflow: hidden; position: relative; }
+.pc-img-bg { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
+.proyecto-card:hover .pc-img-bg { transform: scale(1.04); }
+.pc-cat {
+  position: absolute;
+  top: 14px; left: 14px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 99px;
+  letter-spacing: 0.04em;
+  font-family: var(--font-body);
+}
+.pc-body { padding: 20px 22px 22px; }
+.pc-body h4 { font-family: var(--font-head); font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+.pc-body p { font-size: 0.85rem; color: var(--ink-soft); line-height: 1.6; margin-bottom: 16px; font-family: var(--font-body); }
+.pc-progress { margin-bottom: 14px; }
+.pc-progress-bar { height: 6px; background: var(--accent-lt); border-radius: 99px; overflow: hidden; margin-bottom: 6px; }
+.pc-progress-fill { height: 100%; background: var(--accent); border-radius: 99px; }
+.pc-progress-labels { display: flex; justify-content: space-between; font-size: 0.75rem; font-family: var(--font-body); }
+.pc-progress-labels .pct { color: var(--accent); font-weight: 700; }
+.pc-progress-labels .goal { color: var(--ink-soft); }
+
+.carousel-nav { display: flex; gap: 10px; margin-top: 32px; justify-content: center; }
+.car-btn {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border);
+  background: var(--white);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: all 0.2s;
+}
+.car-btn svg { width: 18px; height: 18px; fill: none; stroke: var(--ink-mid); stroke-width: 2; }
+.car-btn:hover { border-color: var(--accent); background: var(--accent); }
+.car-btn:hover svg { stroke: #fff; }
