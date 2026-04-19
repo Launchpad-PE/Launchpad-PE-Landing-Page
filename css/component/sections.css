@@ -321,3 +321,58 @@ section { padding: 100px 5%; }
 .car-btn svg { width: 18px; height: 18px; fill: none; stroke: var(--ink-mid); stroke-width: 2; }
 .car-btn:hover { border-color: var(--accent); background: var(--accent); }
 .car-btn:hover svg { stroke: #fff; }
+
+/* ===== PLANES ===== */
+#Planes { background: var(--white); text-align: center; }
+.planes-inner { max-width: 900px; margin: 0 auto; }
+.planes-header { margin-bottom: 56px; }
+.planes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; text-align: left; }
+
+.plan-card { border: 1.5px solid var(--border); border-radius: var(--radius-lg); padding: 36px 32px; position: relative; transition: all 0.3s; }
+.plan-card:hover { box-shadow: var(--shadow-md); }
+.plan-card.featured { border-color: var(--accent); background: linear-gradient(135deg, #f5f4ff, #fff); }
+
+.plan-featured-badge {
+  position: absolute;
+  top: -14px; left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 99px;
+  white-space: nowrap;
+  letter-spacing: 0.04em;
+  font-family: var(--font-body);
+}
+.plan-price-wrap { margin-bottom: 28px; }
+.plan-price-wrap .price { font-family: var(--font-head); font-size: 3rem; font-weight: 700; color: var(--ink); letter-spacing: -0.02em; line-height: 1; }
+.plan-price-wrap .price span { font-size: 1.2rem; color: var(--ink-soft); font-weight: 400; font-family: var(--font-body); }
+.plan-price-wrap .plan-name { font-size: 0.85rem; font-weight: 600; color: var(--ink-soft); margin-top: 6px; text-transform: uppercase; letter-spacing: 0.08em; font-family: var(--font-body); }
+.plan-divider { height: 1px; background: var(--border); margin: 24px 0; }
+.plan-role-title { font-size: 0.8rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 14px; margin-top: 18px; font-family: var(--font-body); }
+
+.plan-feat { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; font-size: 0.9rem; color: var(--ink-mid); font-family: var(--font-body); }
+.plan-feat .check { width: 18px; height: 18px; background: var(--accent-lt); border-radius: 50%; display: grid; place-items: center; flex-shrink: 0; margin-top: 2px; }
+.plan-feat .check svg { width: 10px; height: 10px; fill: none; stroke: var(--accent); stroke-width: 2.5; }
+.plan-card.featured .plan-feat .check { background: var(--accent); }
+.plan-card.featured .plan-feat .check svg { stroke: #fff; }
+
+.plan-cta-btn {
+  width: 100%;
+  margin-top: 28px;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: var(--ink);
+  transition: all 0.2s;
+  font-family: var(--font-body);
+}
+.plan-cta-btn:hover { background: var(--ink); color: #fff; border-color: var(--ink); }
+.plan-card.featured .plan-cta-btn { background: var(--accent); color: #fff; border-color: var(--accent); box-shadow: 0 6px 20px rgba(91,79,232,0.3); }
+.plan-card.featured .plan-cta-btn:hover { background: var(--accent-dk); }
